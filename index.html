@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Build your own horror movie poster...if you dare."/>
+  <link rel="canonical" href="https://russelljkennedy.github.io/horrorshow/" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Horror movie generator" />
+  <meta property="og:description" content="Build your own horror movie poster...if you dare." />
+  <meta property="og:url" content="https://russelljkennedy.github.io/horrorshow/" />
+  <meta property="og:site_name" content="Horror movie generator" />
+  <meta property="og:image" content="https://russelljkennedy.github.io/horrorshow/img/share-img-lg.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:description" content="Build your own horror movie poster...if you dare." />
+  <meta name="twitter:title" content="Horror movie generator" />
+  <meta name="twitter:image" content="https://russelljkennedy.github.io/horrorshow/img/share-img-sm.jpg" />
+  <meta name="twitter:image:alt" content="Image of a horror poster created using the generator and entitled The Curse of a Town Called Despair">
+  <title>Horror movie generator</title>
+  <link href="https://fonts.googleapis.com/css?family=Griffy|Risque&display=swap" rel="stylesheet">
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139657000-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-139657000-3');
+  </script>
+</head>
+<body>
+  <section class="header">
+    <header>
+      <h1>Generate your own horror movie</h1>
+    </header>
+  </section>
+  <section class="main">
+    <div id="intro">
+      <h2>Welcome, friends. Come in, come in.</h2>
+      <h4>
+        I invite you to push the button below and build the horror movie poster of your dreams.<br />
+        Those of a nervous disposition beware, terror lurks inside these walls. You might not like what you're about to see.
+      </h4>
+      <h4>You have been warned.</h4>
+    </div>
+    <div id="begin" class="generator-first">
+      <button type="button" name="button" id="start-btn">
+        <p>Build your own ... if you dare</p>
+      </button>
+    </div>
+    <div class="container">
+      <div id="horror-wrap" class="hidden">
+        <div class="background"></div>
+        <div class="cast"></div>
+        <div class="title"></div>
+        <div class="tagline"></div>
+      </div>
+    </div>
+    <div id="controls">
+      <div id="generator" class="generator">
+        <button id="capture-btn"><p><i class="fas fa-external-link-alt"></i> Open as image</p></button>
+        <button type="button" name="button" id="generate-btn">
+          <p><i class="fas fa-redo-alt"></i> Build another</p>
+        </button>
+      </div>
+    </div>
+  </section>
+  <section class="footer" id="social-links">
+    <div class="social">
+      <h3>Spill your guts</h3>
+      <div class="share-links">
+        <ul>
+          <a href="https://twitter.com/intent/tweet?text=Build%20your%20own%20horror%20movie%20poster...if%20you%20dare.%20https%3A%2F%2Frusselljkennedy.github.io%2Fhorrorshow%2F" target="_blank">
+            <li>
+                <i class="fab fa-twitter"></i> <span>Twitter</span>
+            </li>
+          </a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//russelljkennedy.github.io/horrorshow/" target="_blank">
+            <li>
+                <i class="fab fa-facebook"></i> <span>Facebook</span>
+            </li>
+          </a>
+          <a href="https://pinterest.com/pin/create/button/?url=https://russelljkennedy.github.io/horrorshow/&media=https://russelljkennedy.github.io/horrorshow/img/share-img.jpg&description=Build%20your%20own%20horror%20movie%20poster." target="_blank">
+            <li>
+                <i class="fab fa-pinterest"></i> <span>Pinterest</span>
+            </li>
+          </a>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <script src="js/html2canvas.min.js" charset="utf-8"></script>
+  <script src="js/main.js" charset="utf-8"></script>
+</body>
+</html>
