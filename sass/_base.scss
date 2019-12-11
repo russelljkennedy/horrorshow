@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css?family=Griffy|Risque&display=swap");
+$body_font: "Risque", cursive;
+$heading_font: "Griffy", cursive;
+
+// Colours
+$bg_col: #222020;
+$intro_col: #f05151;
+$heading_col: #ff81a8;
+$red: #ff0000;
+$black: #000;
+$green: #5ec16e;
+$tagline: #ef5151;
+$btn_bg: #b3329d;
+$btn_fg: #e4d0d0;
+$btn_hover_bg: #4c32b3;
+
+
+// Mixins
+@mixin size($prop, $sizeValue, $sizeValue2: "", $sizeValue3: "", $sizeValue4: "") {
+  @if $sizeValue4 != "" {
+    #{$prop}: ($sizeValue * 1) + px ($sizeValue2 * 1) + px ($sizeValue3 * 1) + px ($sizeValue4 * 1) + px;
+    #{$prop}: ($sizeValue / 10) + rem ($sizeValue2 / 10) + rem ($sizeValue3 / 10) + rem ($sizeValue4 / 10) + rem;
+  }
+  @else if $sizeValue3 != "" {
+    #{$prop}: ($sizeValue * 1) + px ($sizeValue2 * 1) + px ($sizeValue3 * 1) + px;
+    #{$prop}: ($sizeValue / 10) + rem ($sizeValue2 / 10) + rem ($sizeValue3 / 10) + rem;
+  }
+  @else if $sizeValue2 != "" {
+    #{$prop}: ($sizeValue * 1) + px ($sizeValue2 * 1) + px;
+    #{$prop}: ($sizeValue / 10) + rem ($sizeValue2 / 10) + rem;
+  }
+  @else {
+    #{$prop}: ($sizeValue * 1) + px;
+    #{$prop}: ($sizeValue / 10) + rem;
+  }
+}

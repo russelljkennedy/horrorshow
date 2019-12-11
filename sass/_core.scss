@@ -1,0 +1,52 @@
+* , *:before, *:after{
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+} 
+html, body {
+margin: 0;
+padding: 0;
+font-family: $body_font;
+background: $bg_col
+}
+
+h1, h2, h3, h4 {
+font-family: $heading_font;
+color: $heading_col;
+text-shadow: 1px 2px 2px $black;
+}
+h2 {
+font-size: 1.75rem;
+}
+h3 {
+font-size: 1.6rem;
+}
+h4 {
+font-size: 1.5rem;
+}
+// Media queries
+@media only screen and (min-width: 500px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 600px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  h2 {
+    font-size: 4rem;
+  } 
+}
